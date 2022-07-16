@@ -39,12 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
       download.textContent = 'Direct download'
       download.href = download_url
     })
-    .catch(e => console.log(e))
+    .catch(console.error)
 
-  // setTimeout(check_donation, 5000)
+  // setTimeout(check_donation, 2500)
 
-  insights.init('QZXDaLRWC1XvtWGM', { ignoreErrors: true })
-  insights.trackPages({
-    search: true
-  })
+  swetrix.init('ZAX-2szETYGP')
+  swetrix.trackViews()
 })
